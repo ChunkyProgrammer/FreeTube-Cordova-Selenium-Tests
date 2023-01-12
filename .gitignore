@@ -8,3 +8,10 @@ tmp/nanoc/
 
 # Crash Log
 crash.log
+
+#.net
+bin/
+obj/
+
+# visual studio
+.vs/
