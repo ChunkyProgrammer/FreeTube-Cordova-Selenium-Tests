@@ -3,8 +3,8 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Selenium.Axe;
-// using WebDriverManager;
-// using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace FreeTube.UITests
 {
@@ -20,7 +20,7 @@ namespace FreeTube.UITests
         [OneTimeSetUp]
         public void Setup()
         {
-            // new DriverManager().SetUpDriver(new ChromeConfig());
+            new DriverManager().SetUpDriver(new ChromeConfig());
             ChromeOptions options = new();
             options.AddArguments("--no-sandbox");
             options.AddArguments("--disable-dev-shm-usage");
